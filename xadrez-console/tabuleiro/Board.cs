@@ -7,7 +7,7 @@
         public int Colunas { get; set; }
         private Peca[,] Pecas;
 
-        public Board (int linhas, int colunas)
+        public Board(int linhas, int colunas)
         {
             Linhas = linhas;
             Colunas = colunas;
@@ -17,6 +17,12 @@
         public Peca peca(int linha, int coluna)
         {
             return Pecas[linha, coluna];
+        }
+
+        public void colocarPeca(Peca p, Posicao pos)
+        {
+            Pecas[pos.Linha, pos.Coluna] = p;
+            p.Posicao = pos;
         }
     }
 }
