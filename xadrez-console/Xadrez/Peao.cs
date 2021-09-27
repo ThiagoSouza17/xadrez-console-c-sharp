@@ -69,6 +69,8 @@ namespace Xadrez
                         mat[direita.Linha - 1, direita.Coluna] = true;
                     }
                 }
+
+
             }
             else
             {
